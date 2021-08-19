@@ -12,7 +12,7 @@ from pyqtgraph import QtCore, QtGui
 class BlockItem(pg.GraphicsObject):
 	def __init__(self, data):
 		pg.GraphicsObject.__init__(self)
-		self.data = data  ## data must have fields: time, open, close, min, max
+		self.data = data  ## data must have fields: x_lo, x_hi, y_lo, y_hi, color
 		self.generatePicture()
 	def generatePicture(self):
 		## pre-computing a QPicture object allows paint() to run much more quickly, 
@@ -37,15 +37,15 @@ class BlockItem(pg.GraphicsObject):
 		## (in this case, QPicture does all the work of computing the bouning rect for us)
 		return QtCore.QRectF(self.picture.boundingRect())
 
-data = [  ## fields are (time, open, close, min, max).
+data = [  ## fields are (x_lo, x_hi, y_lo, y_hi, color).
     (3, 10, 13,15, 'g'),
     (2, 13, 17,20,'r'),
-    (3., 17, 14,23,'c')
+    (3, 17, 14,23,'c')
 ]
 item = BlockItem(data)
 plt = pg.plot()
 plt.addItem(item)
-plt.setWindowTitle('pyqtgraph example: customGraphicsItem')
+plt.setWindowTitle('pyqtgraph Rect/Block Item: customGraphicsItem')
 
 ## Start Qt event loop unless running in interactive mode or using pyside.
 if __name__ == '__main__':
