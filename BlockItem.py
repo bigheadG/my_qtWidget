@@ -1,4 +1,5 @@
 """
+Modified from a candlestick plot
 Demonstrate creation of a custom graphic (a candlestick plot)
 """
 #import initExample ## Add path to library (just for examples; you do not need this)
