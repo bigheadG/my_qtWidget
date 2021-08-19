@@ -1,6 +1,6 @@
 """
 Modified from a candlestick plot
-Demonstrate creation of a custom graphic (a candlestick plot)
+Demonstrate creation of a custom graphic (a Block/Rect plot)
 """
 #import initExample ## Add path to library (just for examples; you do not need this)
 
