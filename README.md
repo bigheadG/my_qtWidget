@@ -6,11 +6,11 @@ BlockItem.py
 
 
 
-# Notes: numpy/dataFrame print format
-  
-  numpy set foramt:
-  np.set_printoptions(threshold=np.inf,precision=3,suppress=True) #prccision=3
-  
-  dataFrame set format
-  pd.options.display.float_format = '{:.3f}'.format
-			print(v7)
+## Notes: numpy/dataFrame print format
+
+	  numpy set foramt:
+	  np.set_printoptions(threshold=np.inf,precision=3,suppress=True) #prccision=3
+
+	  dataFrame set format: 
+	  pd.options.display.float_format = '{:.3f}'.format
+				print(v7)
