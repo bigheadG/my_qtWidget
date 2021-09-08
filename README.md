@@ -16,4 +16,5 @@ BlockItem.py
 				print(v7)
 
 ex_dictionary.py
-<img width="998" alt="run" src="https://user-images.githubusercontent.com/2010446/132438509-e74d8f44-b423-4c0c-b4ac-a458d1955661.png">
+<img width="985" alt="run" src="https://user-images.githubusercontent.com/2010446/132438676-686f3539-7ed2-4902-8084-044d284a4348.png">
+
